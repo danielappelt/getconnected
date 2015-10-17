@@ -1,0 +1,174 @@
+<!doctype html>
+<html ng-app="indexApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LaserTag One Highscore</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        /*BS3 fix start */
+        body {
+            padding-top: 70px;
+        }
+
+        section.anchor {
+            padding-top: 70px;
+            margin-top: -70px;
+        }
+
+        .container-fluid > .navbar-right:last-child,
+        .container-fluid > .navbar-collapse > .navbar-right:last-child {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        /*BS3 fix end */
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1234;
+            background-color: rgba(0, 0, 0, 0.5); /*dim the background*/
+        }
+
+        .spinner {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px; /* half width of the spinner gif */
+            margin-top: -50px; /* half height of the spinner gif */
+            text-align: center;
+            overflow: auto;
+            width: 220px; /* width of the spinner gif */
+            height: 21px; /*hight of the spinner gif +2px to fix IE8 issue */
+        }
+
+        .alert {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Navbar -->
+<!-- todo: navbar collapses too early -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-center">
+            <li><a class="navbar-brand" href="#">GetConnected</a></li>
+        </ul>
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="container" ng-controller="MainGridCtrl">
+
+    <section class="anchor" id="currentMonth">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div>
+                    <div id="overlay" style="display:none;">
+                        <div id="spinner" class="spinner">
+                            <img id="img-spinner" src="img/spinner.gif" alt="Loading"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div ng-repeat="user in users" class="well"
+                             style="width:200px; height:200px; margin:20px; float: left;
+                             background-image: url('{{user.img}}'); background-size: 100%;"
+                             onclick="$('#modalUser').modal('show');">
+
+                            <div class="row" style="padding-left: 20px; padding-right: 20px;">
+                                <!--<div class="span6">-->
+                                <b class="span" style="color: #fff">{{user.name}}</b>
+                                <!--</div>-->
+                                <!--<div class="span5">-->
+                                <div ng-repeat="pref in user.preferences" class="pull-right" style="margin-left:5px">
+                                    <span class="glyphicon {{pref}}" style="color: #fff"></span>
+                                </div>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalUser" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Hans Peter</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Hobby</li>
+                                <li>Sprache</li>
+                                <li>etc.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg"
+                                 style="width:200px; height: 200px;"/>
+                        </div>
+
+                    </div>
+                    <!--<div>-->
+
+                    <div style="margin:10px">
+                        <div class="input-group" style="width:100%">
+                            <input id="chatInput" type="text" class="form-control"
+                                   placeholder="Schreibe Hans Peter eine Nachricht" aria-describedby="basic-addon2">
+                        </div>
+                        <div id="chatMessages" style="margin-top: 20px">
+
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Abbrechen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+    $('#chatInput').keypress(function (e) {
+        var key = e.which;
+        if (key == 13)
+        {
+            var txt = $('#chatInput').val();
+            $('#chatInput').val('');
+            var str = "<hr/><p>" + txt + "</p>";
+
+            $('#chatMessages').append(str);
+        }
+    });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<script src="angular/indexApp.js"></script>
+
+</body>
+</html>
