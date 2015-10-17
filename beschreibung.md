@@ -29,8 +29,8 @@ Florian, Lukas, Daniel, Lisa, Michael
 ---
 
 #Details:
-**1)eine Registrierung ist notwendig, Angaben wären:**
-	-> Name (Nickname, Vorname, etc.)
+**1)eine Registrierung ist notwendig, Angaben wären:*
+* Name (Nickname, Vorname, etc.)
 	-> Hobbies (3 Hauptgebiete z.B. Sport, Essen/Trinken und Lesen/Quatschen)
 	-> Alter *optional
 	-> Geschlecht *optional
