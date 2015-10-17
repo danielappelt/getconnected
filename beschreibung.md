@@ -60,8 +60,12 @@ Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 # Im Folgenden werden die einzelnen Fenster beschrieben:
 
 **Landing Page:**
+* Menüleiste mit der Auswahl: Favoriten, Nachrichten, Einstellungen, Online/Offline
+* ausklappbarer Filter links
+* Profilbilder im "Gitter"
 
 **Profilfenster:**
+* 
 
 **Chatfenster:**
 
