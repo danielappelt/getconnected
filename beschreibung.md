@@ -80,3 +80,9 @@ Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 **Nachrichten(übersichts)fenster:**
 * links Profilbilder
 * rechts letzte Nachricht
+
+**Einstellungen:**
+* Privatssphäre (z.B. Distanz anzeigen lassen / oder nicht, Profil löschen...)
+* Lautstärke / Benachrichtigungen
+* Hilfe
+* Freunde einladen / vorschlagen
