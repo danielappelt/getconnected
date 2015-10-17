@@ -1,9 +1,0 @@
-[
-  {"id":"0", "titel":"katze", "farbe":"black", "age":22},
-  {"id":"1", "titel":"katze1", "farbe":"yellow", "age":18},
-  {"id":"2", "titel":"katze2", "farbe":"blue", "age":19},
-  {"id":"3", "titel":"katze3", "farbe":"white", "age":20},
-  {"id":"4", "titel":"katze4", "farbe":"black-white", "age":11}
-]
-
-

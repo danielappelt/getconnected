@@ -19,7 +19,10 @@ router.get('/people/:id', function (req, res){
 });
 
 router.get('/people', function (req, res){
-    res.json(data);
+	var cat = _.map(details, function(user){
+		return {"id":user.id, "image":user.image, "nickname": user.nickname, "online": user.online};s
+});
+    res.json(cat);
 });
 
 app.use('/api', router);
