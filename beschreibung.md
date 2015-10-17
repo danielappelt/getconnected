@@ -73,6 +73,9 @@ Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 * Kommentar schreiben (nur möglich nach Kontakt)
 
 **Chatfenster:**
+* Menüleiste für Bilder, Videos, Links, Lokalisierung etc.
+* Nachrichten (wie WhatsApp) mit Zeit und Name
+* Textfeld
 
 **Nachrichten(übersichts)fenster:**
 
