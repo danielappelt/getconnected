@@ -59,12 +59,11 @@ Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 
 # Im Folgenden werden die einzelnen Fenster beschrieben:
 
-## Landing Page:
-*
+**Landing Page:**
 
-## Profilfenster:
+**Profilfenster:**
 
-## Chatfenster:
+**Chatfenster:**
 
-## Nachrichten(übersichts)fenster:
+**Nachrichten(übersichts)fenster:**
 
