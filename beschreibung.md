@@ -56,3 +56,15 @@ etc....
 **6) Bewertungsoption:**
 Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 
+
+# Im Folgenden werden die einzelnen Fenster beschrieben:
+
+## Landing Page:
+*
+
+## Profilfenster:
+
+## Chatfenster:
+
+## Nachrichten(übersichts)fenster:
+
