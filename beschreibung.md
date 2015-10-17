@@ -78,4 +78,5 @@ Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 * Textfeld
 
 **Nachrichten(übersichts)fenster:**
-
+* links Profilbilder
+* rechts letzte Nachricht
