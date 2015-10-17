@@ -2,5 +2,14 @@
 RefugeeHacks project getconnected
 
 
-# Server
-46.101.236.231
+# TO DO:
+ - Frontendweiterentwicklung
+	- Einbindung des Backends
+ 	- Filter
+ - Backend
+ 	- Verbindung mit MongoDB (Infrastruktur Ubuntu)
+ - Standortsuche
+ - Registrierung
+ - Multi-Language
+ - Chat
+ - Privacy Settings
