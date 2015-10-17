@@ -53,6 +53,6 @@ Florian, Lukas, Daniel, Lisa, Michael
 * Smilies
 etc....
 
-**6) Bewertungsoption: **
+**6) Bewertungsoption:**
 Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 
