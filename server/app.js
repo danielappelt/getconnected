@@ -4,7 +4,6 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var data = require('./data/data.json');
 var details = require('./data/detail.json');
 var _ = require('lodash');
 var router = express.Router();              // get an instance of the express Router
