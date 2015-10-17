@@ -13,3 +13,7 @@ RefugeeHacks project getconnected
  - Multi-Language
  - Chat
  - Privacy Settings
+
+# Lizenz
+
+siehe LICENSE
