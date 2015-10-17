@@ -65,7 +65,12 @@ Man kann Kommentare zu Leuten schreiben (wie "cooler Typ, weil...")
 * Profilbilder im "Gitter"
 
 **Profilfenster:**
-* 
+* mittig der Name
+* darunter rechts das Bild und links die Angaben inkl. einer "über mich" Rubrik
+* Nachrichtenfenster
+* Block- und Meldfunktion (nur möglich nach Kontakt)
+* Kommentare
+* Kommentar schreiben (nur möglich nach Kontakt)
 
 **Chatfenster:**
 
