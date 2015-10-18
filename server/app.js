@@ -5,8 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-
 var app = express();
 
 var mongoose = require('mongoose');
@@ -56,9 +54,11 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(cookieParser());
-    app.use(express.static(path.join(__dirname, 'public')));
 
-    app.use('/', routes);
+    app.use(express.static(path.join(__dirname, 'public')));
+    // Serve the front end mockup via /
+    app.use(express.static(path.join('..', 'frontend_mockup')));
+    // Serve the api via /api/..
     app.use('/api/people', people);
 
     // catch 404 and forward to error handler - do this only after
@@ -95,10 +95,3 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
 });
 
 module.exports = app;
-
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s', host, port);
-});

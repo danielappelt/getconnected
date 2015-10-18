@@ -1,9 +1,72 @@
 [
-  {"id":"0", "nickname" : "max", "birthday" : "1968-10-15", "gender" : "male", "country" : "germany", "language" : "german, english", "hobbies" : "football","description" : "Some text about me", "online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : "some place", "refugee": false},
-  {"id":"1", "nickname" : "mohamad", "birthday" : "1978-10-25", "gender" : "male", "country":"afghanistan", "language" : "arabic, english", "hobbies" : "football","description" : "Some text about me","online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : "some place", "refugee" : "true"},
-  {"id":"2", "nickname" : "manuel", "birthday" : "1957-05-13", "gender" : "male", "country":"germany","language" : "german, english", "hobbies" : "football","description" : "Some text about me","online" : false, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : "some place", "refugee" : false},
-  {"id":"3", "nickname" : "marina", "birthday" : "1988-09-14", "gender" : "male", "country" : "germany","language" : "german, english", "hobbies" : "cooking","description" : "Some text about me", "online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : "some place", "refugee" : false},
-  {"id":"4", "nickname" : "aischa", "birthday" : "1990-01-23", "gender" : "male", "country":"syria","language" : "arabic, english", "hobbies" : "cooking", "description" : "Some text about me","online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : "some place", "refugee" : true}
+    {
+        "id": "0",
+        "nickname": "max",
+        "birthday": "1968-10-15",
+        "gender": "male",
+        "country": "germany",
+        "language": "german, english",
+        "hobbies": "football",
+        "description": "Some text about me",
+        "online": true,
+        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
+        "location": "some place",
+        "refugee": false
+    },
+    {
+        "id": "1",
+        "nickname": "mohamad",
+        "birthday": "1978-10-25",
+        "gender": "male",
+        "country": "afghanistan",
+        "language": "arabic, english",
+        "hobbies": "football",
+        "description": "Some text about me",
+        "online": true,
+        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
+        "location": "some place",
+        "refugee": "true"
+    },
+    {
+        "id": "2",
+        "nickname": "manuel",
+        "birthday": "1957-05-13",
+        "gender": "male",
+        "country": "germany",
+        "language": "german, english",
+        "hobbies": "football",
+        "description": "Some text about me",
+        "online": false,
+        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
+        "location": "some place",
+        "refugee": false
+    },
+    {
+        "id": "3",
+        "nickname": "marina",
+        "birthday": "1988-09-14",
+        "gender": "male",
+        "country": "germany",
+        "language": "german, english",
+        "hobbies": "cooking",
+        "description": "Some text about me",
+        "online": true,
+        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
+        "location": "some place",
+        "refugee": false
+    },
+    {
+        "id": "4",
+        "nickname": "aischa",
+        "birthday": "1990-01-23",
+        "gender": "male",
+        "country": "syria",
+        "language": "arabic, english",
+        "hobbies": "cooking",
+        "description": "Some text about me",
+        "online": true,
+        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
+        "location": "some place",
+        "refugee": true
+    }
 ]
-
-
