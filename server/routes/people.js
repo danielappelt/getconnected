@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var User = require('../models/User.js');
 
 /* GET people listing. */
+//TODO: Get People by Location, limited
 router.get('/', function(req, res, next) {
         User.find(function (err, todos) {
                 if (err) return next(err);

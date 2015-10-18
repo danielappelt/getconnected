@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahrmichael/getconnected.git"
+    "url": "git+https://github.com/danielappelt/getconnected.git"
   },
   "author": "getconnectedTeam",
   "dependencies": {
