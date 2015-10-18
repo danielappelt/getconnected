@@ -5,13 +5,13 @@
         "birthday": "1968-10-15",
         "gender": "male",
         "country": "germany",
-        "language": "german, english",
-        "hobbies": "football",
+        "languages": ["german, english"],
+        "hobbies": ["football"],
         "description": "Some text about me",
+        "image_url": "http://lorempixel.com/200/200/people/0",
+        "is_refugee": false,
         "online": true,
-        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
-        "location": "some place",
-        "refugee": false
+        "location": "some place"
     },
     {
         "id": "1",
@@ -19,13 +19,13 @@
         "birthday": "1978-10-25",
         "gender": "male",
         "country": "afghanistan",
-        "language": "arabic, english",
-        "hobbies": "football",
+        "languages": ["arabic, english"],
+        "hobbies": ["football"],
         "description": "Some text about me",
+        "image_url": "http://lorempixel.com/200/200/people/1",
+        "is_refugee": "true",
         "online": true,
-        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
-        "location": "some place",
-        "refugee": "true"
+        "location": "some place"
     },
     {
         "id": "2",
@@ -33,13 +33,13 @@
         "birthday": "1957-05-13",
         "gender": "male",
         "country": "germany",
-        "language": "german, english",
-        "hobbies": "football",
+        "languages": ["german, english"],
+        "hobbies": ["football"],
         "description": "Some text about me",
+        "image_url": "http://lorempixel.com/200/200/people/2",
+        "is_refugee": false,
         "online": false,
-        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
-        "location": "some place",
-        "refugee": false
+        "location": "some place"
     },
     {
         "id": "3",
@@ -47,13 +47,13 @@
         "birthday": "1988-09-14",
         "gender": "male",
         "country": "germany",
-        "language": "german, english",
-        "hobbies": "cooking",
+        "languages": ["german, english"],
+        "hobbies": ["cooking"],
         "description": "Some text about me",
+        "image_url": "http://lorempixel.com/200/200/people/3",
+        "is_refugee": false,
         "online": true,
-        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
-        "location": "some place",
-        "refugee": false
+        "location": "some place"
     },
     {
         "id": "4",
@@ -61,12 +61,12 @@
         "birthday": "1990-01-23",
         "gender": "male",
         "country": "syria",
-        "language": "arabic, english",
-        "hobbies": "cooking",
+        "languages": ["arabic, english"],
+        "hobbies": ["cooking"],
         "description": "Some text about me",
+        "image_url": "http://lorempixel.com/200/200/people/4",
+        "is_refugee": true,
         "online": true,
-        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
-        "location": "some place",
-        "refugee": true
+        "location": "some place"
     }
 ]

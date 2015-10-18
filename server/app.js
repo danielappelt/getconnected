@@ -57,7 +57,7 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
 
     app.use(express.static(path.join(__dirname, 'public')));
     // Serve the front end mockup via /
-    app.use(express.static(path.join('..', 'frontend_mockup')));
+    app.use(express.static(path.join('..', 'frontend')));
     // Serve the api via /api/..
     app.use('/api/people', people);
 
