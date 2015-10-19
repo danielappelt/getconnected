@@ -4,9 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+//var chatserver = "chatme.im";
 
-
-var routes = require('./routes/index');
+//var routes = require('./routes/index');
 var register = require('./routes/register');
 
 
