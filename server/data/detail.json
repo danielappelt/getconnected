@@ -1,14 +1,122 @@
 [
-  {"_id":"0", "nickname" : "max", "birthday" : "1968-10-15", "gender" : "male", "country" : "germany", "language" : ["german", "english"], "hobbies" : ["football"],"description" : "Some text about me", "online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", ""location" : '{"latitude" : 49.123, "longitude" : 8.789}', "is_refugee": false, "mail": "grindr@def.org", "pass" = "123"},
-
-  {"_id":"1", "nickname" : "mohamad", "birthday" : "1978-10-25", "gender" : "male", "country":"afghanistan", "language" : ["arabic", "english"], "hobbies" : ["football"],"description" : "Some text about me","online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : '{"latitude" : 49.123, "longitude" : 8.789}', "is_refugee" : "true", "mail": "is_refugeehacks@def.org", "pass" = "123"},
-
-  {"_id":"2", "nickname" : "manuel", "birthday" : "1957-05-13", "gender" : "male", "country": "germany","language" : ["german" , "english"], "hobbies" : ["football"],"description" : "Some text about me","online" : false, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : '{"latitude" : 49.123, "longitude" : 8.789}', "is_refugee" : false, "mail": "rst@def.org", "pass" = "123"},
-
-  {"_id":"3", "nickname" : "marina", "birthday" : "1988-09-14", "gender" : "male", "country" : "germany","language" : ["german", "english"], "hobbies" : ["cooking"],"description" : "Some text about me", "online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : '{"latitude" : 49.123, "longitude" : 8.789}', "is_refugee" : false, "mail": "oiu@def.org", "pass" = "123"},
-
-  {"_id":"4", "nickname" : "aischa", "birthday" : "1990-01-23", "gender" : "male", "country":"syria","language" : ["arabic", "english"], "hobbies" : ["cooking"], "description" : "Some text about me","online" : true, "image_url" : "http://thecatapi.com/api/image_urls/get?format:src&type:jpg", "location" : '{"latitude" : 49.123, "longitude" : 8.789}', "is_refugee" : true, "mail": "abc@def.org", "pass" = "123"}
-
+    {
+        "_id": "0",
+        "nickname": "max",
+        "birthday": "1968-10-15",
+        "gender": "male",
+        "country": "germany",
+        "language": [
+            "german",
+            "english"
+        ],
+        "hobbies": [
+            "football"
+        ],
+        "description": "Some text about me",
+        "online": true,
+        "image_url": "http://thecatapi.com/api/image_urls/get?format:src&type:jpg",
+        "location": {
+            "latitude": 49.123,
+            "longitude": 8.789
+        },
+        "is_refugee": false,
+        "mail": "grindr@def.org",
+        "pass": "123"
+    },
+    {
+        "_id": "1",
+        "nickname": "mohamad",
+        "birthday": "1978-10-25",
+        "gender": "male",
+        "country": "afghanistan",
+        "language": [
+            "arabic",
+            "english"
+        ],
+        "hobbies": [
+            "football"
+        ],
+        "description": "Sometextaboutme",
+        "online": true,
+        "image_url": "http: //thecatapi.com/api/image_urls/get?format: src&type: jpg",
+        "location": {
+            "latitude": 49.123,
+            "longitude": 8.789
+        },
+        "is_refugee": "true",
+        "mail": "is_refugeehacks@def.org",
+        "pass": "123"
+    },
+    {
+        "_id": "2",
+        "nickname": "manuel",
+        "birthday": "1957-05-13",
+        "gender": "male",
+        "country": "germany",
+        "language": [
+            "german",
+            "english"
+        ],
+        "hobbies": [
+            "football"
+        ],
+        "description": "Sometextaboutme",
+        "online": false,
+        "image_url": "http: //thecatapi.com/api/image_urls/get?format: src&type: jpg",
+        "location": {
+            "latitude": 49.123,
+            "longitude": 8.789
+        },
+        "is_refugee": false,
+        "mail": "rst@def.org",
+        "pass": "123"
+    },
+    {
+        "_id": "3",
+        "nickname": "marina",
+        "birthday": "1988-09-14",
+        "gender": "male",
+        "country": "germany",
+        "language": [
+            "german",
+            "english"
+        ],
+        "hobbies": [
+            "cooking"
+        ],
+        "description": "Sometextaboutme",
+        "online": true,
+        "image_url": "http: //thecatapi.com/api/image_urls/get?format: src&type: jpg",
+        "location": {
+            "latitude": 49.123,
+            "longitude": 8.789
+        },
+        "is_refugee": false,
+        "mail": "oiu@def.org",
+        "pass": "123"
+    },
+    {
+        "_id": "4",
+        "nickname": "aischa",
+        "birthday": "1990-01-23",
+        "gender": "male",
+        "country": "syria",
+        "language": [
+            "arabic",
+            "english"
+        ],
+        "hobbies": [
+            "cooking"
+        ],
+        "description": "Sometextaboutme",
+        "online": true,
+        "image_url": "http: //thecatapi.com/api/image_urls/get?format: src&type: jpg",
+        "location": {
+            "latitude": 49.123,
+            "longitude": 8.789
+        },
+        "is_refugee": true,
+        "mail": "abc@def.org",
+        "pass": "123"
+    }
 ]
-
-

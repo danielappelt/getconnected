@@ -56,6 +56,24 @@
         .alert {
             display: none;
         }
+
+        .user {
+            background-size: 100%;
+            color: #fff;
+            cursor: pointer;
+            float: left;
+            height: 200px;
+            width: 200px;
+        }
+
+        .user .row {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .user .pull-right {
+            margin-left: 5px;
+        }
     </style>
 
 </head>
@@ -76,33 +94,23 @@
     <section class="anchor" id="currentMonth">
         <div class="panel panel-default">
             <div class="panel-body">
-
-                <div>
-                    <div id="overlay" style="display:none;">
-                        <div id="spinner" class="spinner">
-                            <img id="img-spinner" src="img/spinner.gif" alt="Loading"/>
-                        </div>
+                <div id="overlay" style="display:none;">
+                    <div id="spinner" class="spinner">
+                        <img id="img-spinner" src="img/spinner.gif" alt="Loading"/>
                     </div>
-                    <div>
-                        <div ng-repeat="user in users" class="well"
-                             style="width:200px; height:200px; margin:20px; float: left;
-                             background-image: url('{{user.img}}'); background-size: 100%;"
-                             onclick="$('#modalUser').modal('show');">
-
-                            <div class="row" style="padding-left: 20px; padding-right: 20px;">
-                                <!--<div class="span6">-->
-                                <b class="span" style="color: #fff">{{user.name}}</b>
-                                <!--</div>-->
-                                <!--<div class="span5">-->
-                                <div ng-repeat="pref in user.preferences" class="pull-right" style="margin-left:5px">
-                                    <span class="glyphicon {{pref}}" style="color: #fff"></span>
-                                </div>
-                                <!--</div>-->
+                </div>
+                <div>
+                    <!-- display grid of users -->
+                    <div ng-repeat="user in users" class="well user"
+                            style="background-image: url('{{user.image_url}}');"
+                            onclick="$('#modalUser').modal('show');">
+                        <div class="row">
+                            <strong class="span">{{user.nickname}}</strong>
+                            <div ng-repeat="pref in user.hobbies" class="pull-right">
+                                <span class="glyphicon {{pref}}"></span>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -141,7 +149,6 @@
 
                         </div>
                     </div>
-                    <!--</div>-->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Abbrechen</button>
