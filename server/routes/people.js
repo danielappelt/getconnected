@@ -15,7 +15,8 @@ router.get('/', function(req, res, next) {
 							"_id":usr._id, 
 							"image_url":usr.image_url, 
 							"nickname":usr.nickname, 
-							"online" : usr.online
+							"online" : usr.online,
+							"is_refugee" : usr.is_refugee
 						};
 					});
                 res.json(preview);
@@ -35,9 +36,10 @@ router.get('/:id', function(req, res, next) {
 							"birthday" : usr.birthday,
 							"gender" : usr.gender,
 							"country": usr.country,
-							"language":usr.language,
+							"languages":usr.languages,
 							"hobbies":usr.hobbies,
 							"description":usr.description,
+							"is_refugee" : usr.is_refugee
 							//No Output of Mail, Pass, Location, Updated at
 						};
 					});

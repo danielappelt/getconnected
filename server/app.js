@@ -57,7 +57,7 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(cookieParser());
-    app.use(express.static(path.join(__dirname, 'public')));
+    pp.use(express.static(path.join('..', 'frontend')));
 
     app.use('/', routes);
     app.use('/api/people', people);
