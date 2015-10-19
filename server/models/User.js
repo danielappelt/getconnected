@@ -10,7 +10,9 @@ hobbies: String,
 description: String,
 online: Boolean,
 image_url: String,
-location: String,
+location: String, // JSON Object latitude, longitude
+mail: String,
+pass: String,
 updated_at: { type: Date, default: Date.now },
 });
 

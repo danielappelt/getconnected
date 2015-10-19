@@ -3,21 +3,45 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 var User = require('../models/User.js');
+var _ = require('lodash');
 
 /* GET people listing. */
 //TODO: Get People by Location, limited
 router.get('/', function(req, res, next) {
-        User.find(function (err, todos) {
-                if (err) return next(err);
-                res.json(todos);
+        User.find(function (err, outp) {
+                	if (err) return next(err);
+					var preview = _.map(outp, function(usr){
+						return{
+							"_id":usr._id, 
+							"image_url":usr.image_url, 
+							"nickname":usr.nickname, 
+							"online" : usr.online
+						};
+					});
+                res.json(preview);
                 });
-        });
+		});
 
 /* GET /people/id */
 router.get('/:id', function(req, res, next) {
-        User.findById(req.params.id, function (err, post) {
+        User.findById(req.params.id, function (err, outp) {
                 if (err) return next(err);
-                res.json(post);
+                var detail = _.map(outp, function(usr){
+						return{
+							"_id":usr._id, 
+							"image_url":usr.image_url, 
+							"nickname":usr.nickname, 
+							"online" : usr.online,
+							"birthday" : usr.birthday,
+							"gender" : usr.gender,
+							"country": usr.country,
+							"language":usr.language,
+							"hobbies":usr.hobbies,
+							"description":usr.description,
+							//No Output of Mail, Pass, Location, Updated at
+						};
+					});
+                res.json(detail);
                 });
         });
 

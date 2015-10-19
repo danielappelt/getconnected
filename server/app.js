@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var register = require('./routes/register');
 
 var app = express();
 
@@ -28,7 +29,7 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
         people.get('/', function (req, res) {
             var cat = _.map(details, function(user) {
                 return {
-                    "id":user.id,
+                    "_id":user._id,
                     "image_url":user.image_url,
                     "nickname": user.nickname,
                     "online": user.online
@@ -60,6 +61,7 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
 
     app.use('/', routes);
     app.use('/api/people', people);
+	app.use('/api/register', register);
 
     // catch 404 and forward to error handler - do this only after
     // regular use definitions.
@@ -96,9 +98,9 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
 
 module.exports = app;
 
-var server = app.listen(3000, function () {
+/**var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
 
   console.log('Example app listening at http://%s:%s', host, port);
-});
+});*/
