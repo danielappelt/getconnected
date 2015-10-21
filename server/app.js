@@ -6,17 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //var chatserver = "chatme.im";
 
-//var routes = require('./routes/index');
-var register = require('./routes/register');
-
-
 var app = express();
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/getconnected', function(err) {
     // Please note that this will get called asynchronously. Only
     // initialize the app once we know that we have a connection (or not).
-    var people;
+    var register = require('./routes/register'), people;
 
     if (err) {
         console.log('connection error', err);
@@ -101,12 +97,3 @@ mongoose.connect('mongodb://localhost/getconnected', function(err) {
 });
 
 module.exports = app;
-
-
-/**var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s', host, port);
-});*/
-
